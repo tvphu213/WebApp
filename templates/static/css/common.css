@@ -1,0 +1,18 @@
+
+.sidebar-footer-menu .menu-footer h3 {
+    font-family: SFUIText,sans-serif;
+    text-transform: unset;
+    letter-spacing: normal;
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 26px;
+    color: #f37021;
+    margin-bottom: 13px;
+}
+
+.sidebar-footer-menu .menu-footer ul li a {
+    font-family: SFUIText,sans-serif;
+    letter-spacing: normal;
+    font-size: 18px;
+    color: #007bff!important;
+}

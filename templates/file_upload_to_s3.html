@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="static/css/common.css" media="screen" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>
+        FPT QAI DE WebApp
+    </title>
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no'
+        name='viewport' />
+    <!-- Fonts and icons -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
+    <!-- CSS Files -->
+    <link href="static/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="static/css/paper-dashboard.css?v=2.0.1" rel="stylesheet" />
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="navbar">
+        <h2> </h2>
+    </div>
+    <hr>
+
+
+    <div class="container">
+        <h2>Welcome to QAI DE Class</h2>
+        <div class="card">
+            <!-- <div class="card" style="width:400px"> -->
+
+            <div class="card-body ">
+                <form action="/upload" method="post" enctype="multipart/form-data">
+                    <p class="card-text">Choose a file to upload it to AWS S3</p>
+                    <input type="file" name="file" value="file">
+                    <hr>
+                    <input type="submit" name="upload" value="Upload to S3" class="btn btn-success">
+                </form>
+                {{msg}}
+            </div>
+        </div>
+        <br>
+        <div class="row have-flex sidebar-footer-menu">
+            <div class="col-md-3 col-sm-3 menu-footer">
+                <h3>About us</h3>
+                <div class="menu-about-us-container">
+                    <ul id="menu-about-us" class="menu">
+                        <li id="menu-item-5647"
+                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5647"><a
+                                href="https://www.fpt-software.com/about-fpt-software/" itemprop="url">About FPT
+                                Software</a></li>
+                        <li id="menu-item-7231"
+                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7231"><a
+                                href="https://www.fpt-software.com/why-fpt-software/" itemprop="url">Why FPT
+                                Software?</a>
+                        </li>
+                        <li id="menu-item-20042"
+                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-20042"><a
+                                href="https://www.fpt-software.com/our-campus/" itemprop="url">Our Campus</a></li>
+                        <li id="menu-item-20324"
+                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-20324"><a
+                                href="https://www.fpt-software.com/about-us/our-partner-network/" itemprop="url">Our
+                                Partner
+                                Network</a></li>
+                        <li id="menu-item-134391"
+                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-134391"><a
+                                href="https://www.fpt-software.com/about-us/board-of-management/" itemprop="url">Board
+                                of
+                                Management</a></li>
+                        <li id="menu-item-5646"
+                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5646"><a
+                                href="https://www.fpt-software.com/global-presence/" itemprop="url">Global Presence</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-3 menu-footer">
+                <h3>Our Resource Center</h3>
+                <div class="menu-our-resource-center-container">
+                    <ul id="menu-our-resource-center" class="menu">
+                        <li id="menu-item-20059"
+                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-20059"><a
+                                href="https://www.fpt-software.com/innovationhub/" itemprop="url">Innovation Hub</a>
+                        </li>
+                        <li id="menu-item-20060"
+                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-20060"><a
+                                href="https://www.fpt-software.com/case-studies/" itemprop="url">Case Studies</a></li>
+                        <li id="menu-item-20061"
+                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-20061"><a
+                                href="https://www.fpt-software.com/whitepapers/" itemprop="url">Whitepapers</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-3 menu-footer">
+                <h3>Industries</h3>
+                <div class="menu-industries-container">
+                    <ul id="menu-industries" class="menu">
+                        <li id="menu-item-138961"
+                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-138961"><a
+                                href="https://www.fpt-software.com/industries/aviation/" itemprop="url">Aviation</a>
+                        </li>
+                        <li id="menu-item-138587"
+                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-138587"><a
+                                href="https://www.fpt-software.com/industries/automotive/" itemprop="url">Automotive</a>
+                        </li>
+                        <li id="menu-item-20310"
+                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-20310"><a
+                                href="https://www.fpt-software.com/industries/banking-finance-bfsi/"
+                                itemprop="url">Banking
+                                and Finance</a></li>
+                        <li id="menu-item-20905"
+                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-20905"><a
+                                href="https://www.fpt-software.com/industries/media-entertainment/" itemprop="url">Media
+                                &amp; Entertainment</a></li>
+                        <li id="menu-item-20336"
+                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-20336"><a
+                                href="https://www.fpt-software.com/industries/digital-healthcare/"
+                                itemprop="url">Healthcare</a></li>
+                        <li id="menu-item-139204"
+                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-139204"><a
+                                href="https://www.fpt-software.com/industries/logistics/" itemprop="url">Logistics</a>
+                        </li>
+                        <li id="menu-item-138586"
+                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-138586"><a
+                                href="https://www.fpt-software.com/industries/manufacturing/"
+                                itemprop="url">Manufacturing</a></li>
+                        <li id="menu-item-139264"
+                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-139264"><a
+                                href="https://www.fpt-software.com/industries/utility/" itemprop="url">Utility</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-3 menu-footer">
+                <h3>Newsroom</h3>
+                <div class="menu-newsroom-container">
+                    <ul id="menu-newsroom" class="menu">
+                        <li id="menu-item-140574"
+                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-140574"><a
+                                href="https://www.fpt-software.com/newsroom/news/" itemprop="url">News</a></li>
+                        <li id="menu-item-140573"
+                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-140573"><a
+                                href="https://www.fpt-software.com/newsroom/press-release/" itemprop="url">Press
+                                Release</a>
+                        </li>
+                        <li id="menu-item-140570"
+                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-140570"><a
+                                href="https://www.fpt-software.com/newsroom/customer-testimonials/"
+                                itemprop="url">Customer
+                                Testimonials</a></li>
+                        <li id="menu-item-140572"
+                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-140572"><a
+                                href="https://www.fpt-software.com/newsroom/event-calendar/" itemprop="url">Event
+                                Calendar</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
